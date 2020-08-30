@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 0px;
+        }
+        h1 {
+            font-weight: bold;
+            padding-right: 20px;
+            color: blueviolet;
+            float: right;
+        }
+        .navBar ul{
+            height: 40px;
+            background-color: #36393F;
+            list-style: none;
+            border-radius: 5px;
+        }
+        ul {
+            padding: 0px;
+        }
+        li {
+            color: white;
+            display: inline-block;
+            text-align: center;
+            padding: 10px 12px;
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+        .formFill {
+            max-width: 400px;
+            margin: 20px;
+        }
+        .classField {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .classField label {
+            width: 600px;
+        }
+        input {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        button {
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c5c5c5;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="iiit-h logo" width="150px"></a>
+
+    <a href="https://serc.iiit.ac.in/rdip"><h1>RDIP</h1></a>
+
+    <div class="navBar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+        </ul>
+    </div>
+
+    <div class="formFill">
+
+    <form action="details.html">
+
+        <div class="classField">
+            <label for="fName">First name:</label>
+            <input type="text" name="fName" id="fName">
+        </div>
+
+        <div class="classField">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div class="classField">
+            <label for="pNumber">Phone No:</label>
+            <input type="number" name="pNumber" id="pNumber">
+        </div>
+
+        <div class="classField">
+            <label for="">Gender:</label>
+
+            <input type="radio" name="rad" id="gOne">
+            <label for="gOne">Male</label>
+
+            <input type="radio" name="rad" id="gTwo">
+            <label for="gTwo">Female</label>
+
+            <input type="radio" name="rad" id="gThree">
+            <label for="gThree">Other</label>
+        </div>
+
+        <div class="classField">
+            <label for="">Reason for RDIP:</label>
+
+            <input type="radio" id="rOne">
+            <label for="rOne">HTML</label>
+
+            <input type="radio" id="rTwo">
+            <label for="rTwo">CSS</label>
+
+            <input type="radio" id="rThree">
+            <label for="rThree">JavaScript</label>
+        </div>
+
+        <div class="classField">
+            <label for="clg">College:</label>
+            <input type="text" name="clg" id="clg">
+        </div>
+
+        <div class="classField">
+            <input type="checkbox" name="declare" id="declare">
+            <label for="declare">I declare above details given by me are true.</label>
+        </div>
+
+        <div class="classField">
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </div>
+
+    </form>
+    
+    </div>
+</body>
+</html>
